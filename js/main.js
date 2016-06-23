@@ -16,12 +16,15 @@ switch (user){
         break;
     case 'RUN':
         var fast = prompt("Are you fast runner..YES/NO?").toUpperCase();
-        if (fast === "YES") {
+        var street = prompt("Do you know the street really well... YES or NO?").toUpperCase()
+        if (fast === "YES" && street === "YES") {
             console.log("Good job!, the monster couldn't catch ya!!")
-            }else if (fast === "NO") {
-                console.log("the monster got you,, he will surly eat ya :(")
-                }else {
-                    console.log("please try again.. write YES or NO")
+            }else if ((fast === "YES") || (street === "YES")) {
+                console.log("the monster almost got you,, you are a lucky one..")
+                }else if (fast === "NO" && street === "NO"){
+                    console.log("What where you thinking... the monster is eating you                                  by now")
+                    } else{
+                        console.log("please try again.. write YES or NO")
                     }
         break;
     case "ACT DINDN'T SEE ":
