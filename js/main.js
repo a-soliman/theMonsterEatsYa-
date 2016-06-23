@@ -34,3 +34,10 @@ switch (user){
                     console.log("please try again.. write YES or NO")
                     }
         break;
+
+        // the default case is to re ask the qus..
+        default :
+        console.log ("Please try again choose from with in this works fight, run, act                          didn't see")
+    
+    
+    }
